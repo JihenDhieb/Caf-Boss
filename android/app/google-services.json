@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "133593788186",
+    "project_id": "cafeboss-88282",
+    "storage_bucket": "cafeboss-88282.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:133593788186:android:03f151cd8abab464d606a3",
+        "android_client_info": {
+          "package_name": "com.example.cafeboss"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAePN7B_e04WLv2u-NvBj7VuEj9biUVQsA"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
