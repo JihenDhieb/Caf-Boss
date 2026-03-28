@@ -66,41 +66,6 @@ Né d'une collaboration avec un vrai cafetier tunisien, ce projet n'est pas une 
 
 ---
 
-## 🏗️ Architecture
-
-```
-CaféBoss
-├── Authentification Firebase (multi-rôles)
-│   ├── Chef  →  Vue globale + gestion
-│   └── Serveur  →  Caisse + sessions
-│
-├── Architecture MVVM + Provider
-│   ├── Models
-│   ├── ViewModels
-│   └── Views
-│
-└── Firebase Backend
-    ├── Firebase Auth
-    └── Cloud Firestore
-```
-
-### Flux multi-rôles
-
-```
-Chef crée le café
-    │
-    ├── Ajoute des serveurs
-    ├── Consulte le dashboard global
-    └── Suit les dépenses & bénéfices
-
-Serveur se connecte
-    │
-    ├── Ouvre une session (Matin / Midi)
-    ├── Enregistre les ventes
-    └── Clôture sa caisse
-```
-
----
 
 ## ⚡ Stack Technique
 
@@ -167,65 +132,6 @@ flutter run
 
 ---
 
-## 📂 Structure du projet
-
-```
-lib/
-├── core/
-│   ├── constants/
-│   ├── theme/
-│   └── utils/
-├── models/
-│   ├── user_model.dart
-│   ├── product_model.dart
-│   ├── session_model.dart
-│   └── expense_model.dart
-├── services/
-│   ├── auth_service.dart
-│   └── firestore_service.dart
-├── viewmodels/
-│   ├── auth_viewmodel.dart
-│   ├── dashboard_viewmodel.dart
-│   └── caisse_viewmodel.dart
-├── views/
-│   ├── splash/
-│   ├── auth/
-│   ├── dashboard/
-│   ├── caisse/
-│   ├── menu/
-│   ├── depenses/
-│   └── historique/
-└── main.dart
-```
-
----
-
-## 🔥 Firestore — Structure de la base de données
-
-```
-cafes/
-└── {cafeId}/
-    ├── name: string
-    ├── ownerId: string
-    ├── produits/
-    │   └── {produitId}/
-    │       ├── nom: string
-    │       └── prix: number
-    ├── serveurs/
-    │   └── {serveurId}/
-    │       └── sessions/
-    │           └── {sessionId}/
-    │               ├── type: "matin" | "midi"
-    │               ├── ventes: array
-    │               └── total: number
-    └── depenses/
-        └── {depenseId}/
-            ├── categorie: string
-            ├── montant: number
-            └── date: timestamp
-```
-
----
 
 ## 💡 Cas d'usage
 
@@ -245,11 +151,6 @@ Les contributions sont les bienvenues ! Pour contribuer :
 
 ---
 
-## 📄 Licence
-
-Ce projet est sous licence MIT. Voir le fichier [LICENSE](LICENSE) pour plus de détails.
-
----
 
 ## 👩‍💻 Auteure
 
